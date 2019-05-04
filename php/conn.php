@@ -14,6 +14,10 @@ function OpenCon()
  return $conn;
  }
 
+function insert($query){
+
+
+}
 
  function CloseCon($conn)
   {

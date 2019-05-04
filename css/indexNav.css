@@ -1,0 +1,92 @@
+li a:hover{
+  background: #3498db!important;
+  color:white;
+}
+li a:focus{
+  background: #3498db!important;
+  color:white;
+}
+.test{
+   border-bottom: 0.5px solid  #ecf0f1;
+}
+.ins{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.br{
+  padding-top: 16px; //put correct pixel
+  padding-bottom: 16px; //put correct pixel
+  color: red;
+}
+.nav>li{
+  margin-right: 8px;
+}
+#cart{
+
+  margin-right: 5%;
+}
+#fav{
+  margin-right: 2%;
+}
+.glyphicon.glyphicon-heart{
+  font-size: 32px;
+}
+.glyphicon.glyphicon-shopping-cart {
+    font-size: 32px;
+}
+
+.input-group{
+  width: 60%;
+  left: 10%;
+}
+.far{
+  width: 50%;
+  border: 1px solid #3498db!important;
+  color:  #3498db!important;
+}
+.far:hover,.glyphicon.glyphicon-search:hover{
+  color:white!important;
+  background:#3498db!important;
+}
+.txtIn{
+  border: 1px solid #3498db!important;
+}
+.nvb{
+  margin-left: 18%!important;
+}
+
+.nvb li{
+  margin: 0px 15px;
+}
+.tel{
+  margin-left: 5px;
+  color: #34495e;
+  font-size: 14px;
+}
+.txt{
+  color: #3498db;
+}
+.cate{
+  width: 160px;
+  text-align: center;
+  font-size: 16px;
+}
+.cate:focus{
+  background: #3498db!important;
+  color:white;
+}
+#dialog-confirm{
+  left: 25%;
+  
+}
+@media only screen and (max-width: 1200px) {
+  .cate{
+     width: 128px;
+  }
+  .nvb{
+    margin-left: 5%!important;
+  }
+  .nvb li{
+    margin: 0px 10px;
+  }
+}
