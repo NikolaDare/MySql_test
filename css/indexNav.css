@@ -75,9 +75,39 @@ li a:focus{
   background: #3498db!important;
   color:white;
 }
+
 #dialog-confirm{
+  color: #3498db!important;
   left: 25%;
-  
+  margin: 8px;
+}
+#dialog-confirm input{
+border: 1px solid #3498db!important;
+}
+.ui-button{
+  color: #3498db!important;
+}
+.ui-button:hover{
+  background: #3498db!important;
+  color: white!important;
+}
+.ui-dialog.success-dialog .ui-widget-header{
+  color: #3498db;
+  border: none;
+  background: white;
+
+}
+.product{
+  width: 300px!important;
+  height: auto;
+}
+.galery{
+
+}
+.galery:hover{
+  transform: scale(1.2);
+  background: #ecf0f1;
+  z-index: 1;
 }
 @media only screen and (max-width: 1200px) {
   .cate{

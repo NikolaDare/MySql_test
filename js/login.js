@@ -12,7 +12,6 @@ function fun() {
 
 $(function() {
 
-
     $( "#dialog-confirm" ).dialog({
       autoOpen: false,
       resizable: false,
@@ -21,19 +20,33 @@ $(function() {
       draggable: false,
       modal: true,
       dialogClass: 'no-close success-dialog',
-      buttons: {
-        "Login": function() {
+      buttons: [
+    {
+      text: "Login",
+      click: function() {
+        if (!$('#username').val()) {
+          alert("Username is empty");
+        }else if (!$('#password').val()) {
+          alert("Password is empty");
+        }else {
           fun();
           $( this ).dialog( "close" );
-        },
-        Cancel: function() {
-          $( this ).dialog( "close" );
         }
-      }
-    });
+      },
+
+      // Uncommenting the following line would hide the text,
+      // resulting in the label being used as a tooltip
+      //showText: false
+    },{
+      text: "Close",
+      click: function() {
+        $( this ).dialog( "close" );
+      },
+    }
+  ]
+});
 
     $('#login').click(function(){
-
        $('#dialog-confirm').dialog('open');
     });
 });

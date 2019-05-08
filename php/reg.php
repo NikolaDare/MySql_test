@@ -10,7 +10,7 @@ $conn = OpenCon();
   VALUES ('$username', '$password', '$email')";
 
   if ($conn->query($sql) === TRUE) {
-      echo "index.php";
+      echo "index.html";
   } else {
       echo "Error: " . $sql . "<br>" . $conn->error;
   }
