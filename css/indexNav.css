@@ -80,6 +80,7 @@ li a:focus{
   color: #3498db!important;
   left: 25%;
   margin: 8px;
+  display: none;
 }
 #dialog-confirm input{
 border: 1px solid #3498db!important;
@@ -97,18 +98,30 @@ border: 1px solid #3498db!important;
   background: white;
 
 }
-.product{
-  width: 300px!important;
-  height: auto;
+.banner{
+  background: url('../img/V30_Hero_banner_D.jpg');
+  background-position: center;
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  margin-top: -19px;
+  margin-bottom: 30px;
 }
-.galery{
-
+.product{
+  width: 100px!important;
+  height: auto;
+  float: right;
 }
 .galery:hover{
   transform: scale(1.2);
   background: #ecf0f1;
   z-index: 1;
+  overflow:auto;
 }
+.galery:hover .itm{
+  transition: scale(.8333);
+}
+
 @media only screen and (max-width: 1200px) {
   .cate{
      width: 128px;
