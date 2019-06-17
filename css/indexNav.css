@@ -163,8 +163,17 @@
   height: inherit;
   background-size: cover;
 }
-.container{
+.container, .container-fluid{
   height: 900px;
+
+}
+.conttest{
+  background: black!important;
+  height: 900px;
+}
+.empty{
+  width: inherit;
+  height: 200px!important;
 }
 .product {
   width: 100px !important;
@@ -172,31 +181,14 @@
   float: right;
 }
 
-.galery:hover {
-  transform: scale(1.2);
-  background: #ecf0f1;
-  z-index: 1;
-  overflow: auto;
-}
-
-.galery:hover .itm {
-  transition: scale(.8333);
-}
-.ad{
-  padding: 10px;
-  background: black;
-  max-height: 100%;
-}
-.ad img{
-  width: 100%;
-  object-fit: scale-down;
-  /* height: 600px; */
-}
-.ad img:hover{
-  /* transition: scale(.8333); */
-}
-.titleAd{
+.exclusive{
   color: white;
+}
+.exhr{
+  height: 2px;
+  border-color:white;
+  color: white;
+  border-color: white;
 }
 .textBody{
   color: white;
