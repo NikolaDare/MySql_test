@@ -5,6 +5,7 @@ $conn = OpenCon();
   $username = $_POST['username'];
   $password = $_POST['password'];
   $email = $_POST['email'];
+  $password = md5($password);
 
   $sql = "INSERT INTO login (username, password, email)
   VALUES ('$username', '$password', '$email')";
