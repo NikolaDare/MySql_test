@@ -53,5 +53,13 @@ $(function() {
     $('#dialog-confirm').dialog('close');
   });
 
-
+  $('.txtnews').on('click',function() {
+    $.get("php/sub.php", {
+      ename: $('#em').val()
+    },function (res, status) {
+      // var data = JSON.parse(res);
+      console.log('data',res);
+      console.log('status',status);
+    });
+  });
 });

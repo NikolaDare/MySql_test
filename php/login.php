@@ -5,6 +5,7 @@ $conn = OpenCon();
 $username = $_POST['username'];
 $password = $_POST['password'];
 
+// $password= md5($password);
 $sql =sprintf("SELECT * FROM `login` WHERE username='%s' AND password='%s'",
                   $username,
                   $password);
@@ -15,9 +16,9 @@ $result =  mysqli_query($conn,$sql);
       // output data of each row
       while($row = $result->fetch_assoc()) {
           echo "id: " . $row["id"].
-               " - Name: " . $row["username"].
-               " " . $row["password"].
-               " " . $row["email"]."\n";
+               "\n Name: " . $row["username"].
+               "\n pass: " . $row["password"].
+               "\n email: " . $row["email"]."\n";
       }
   } else {
       echo "login invalid";
@@ -28,5 +29,4 @@ $result =  mysqli_query($conn,$sql);
   }
 
 CloseCon($conn);
-
- ?>
+?>
